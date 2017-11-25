@@ -16,9 +16,6 @@ class Song
     @artist = artist
     @@artists << @artist
     @@artist_count[@artist] = @artists.count("#{@artist}")
-    else
-      @@artist_count[@artist] = @@artist_count[@artist] + 1
-    end
 
     @genre = genre
     @@genres << @genre
