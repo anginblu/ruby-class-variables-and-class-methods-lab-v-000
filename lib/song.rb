@@ -14,7 +14,7 @@ class Song
     @name = name
 
     @artist = artist
-    if artists.include? @artist == false
+    if artists.include?("#{@artist}") == false
       artists << @artist
       artist_count[@artist] = 1
     else
@@ -23,7 +23,7 @@ class Song
     end
 
     @genre = genre
-    if genres.include? @genre == false
+    if genres.include?("#{@genre}") == false
       genres << @genre
       genre_count[@genre] = 1
     end
