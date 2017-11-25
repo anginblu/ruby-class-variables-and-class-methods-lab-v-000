@@ -26,7 +26,11 @@ class Song
     if genres.include?("#{@genre}") == false
       genres << @genre
       genre_count[@genre] = 1
+    else
+      artist_count2[@artist] = artist_count[@artist] + 1
+      artist_count[@artist] = artist_count2[@artist]
     end
+    
     @@count += 1
 
   end
