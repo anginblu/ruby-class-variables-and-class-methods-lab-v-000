@@ -20,10 +20,6 @@ class Song
     @genre = genre
       @@genres << @genre
       @@genre_count[@genre] = @@genres.count(@artist)
-    else
-      @@genres << @genre
-      @@genre_count[@genre] = @@genre_count[@genre] + 1
-    end
 
     @@count += 1
 
