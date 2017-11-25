@@ -18,8 +18,8 @@ class Song
     @@artist_count[@artist] = @@artists.count(@artist)
 
     @genre = genre
-    @@genres << @genre
     if @@genres.include?("#{@genre}") == false
+      @@genres << @genre
       @@genre_count[@genre] = 1
     else
       @@genres << @genre
