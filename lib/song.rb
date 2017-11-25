@@ -23,13 +23,11 @@ class Song
 
     @genre = genre
     @@genres << @genre
-if @@genres.include?("#{@genre}") == false
-      @@genres << @genre
+    if @@genres.include?("#{@genre}") == false
       @@genre_count[@genre] = 1
     else
       @@genres << @genre
-      @@genre_count2[@genre] = @@genre_count[@genre] + 1
-      @@genre_count[@genre] = @@genre_count2[@genre]
+      @@genre_count[@genre] = @@genre_count[@genre] + 1
     end
 
     @@count += 1
