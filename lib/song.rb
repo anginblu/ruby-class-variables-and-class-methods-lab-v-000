@@ -4,9 +4,7 @@ class Song
   @@artists = []
   @@genres = []
   @@artist_count = {}
-  @@artist_count2 = {}
   @@genre_count = {}
-  @@genre_count2 = {}
 
   attr_reader :name, :artist, :genre
 
