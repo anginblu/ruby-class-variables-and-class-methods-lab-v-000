@@ -19,7 +19,7 @@ class Song
       @@artist_count[@artist] = 1
     else
       @@artists << @artist
-      @@artist_count2[@artist] = @@artist_count[@artist] + 1
+      @@artist_count[@artist] = @@artist_count[@artist] += 1
       @@artist_count[@artist] = @@artist_count2[@artist]
     end
 
