@@ -3,12 +3,12 @@ class Song
   attr_reader name, artist, genre
 
   @@count = 0
-  artists = []
-  genres = []
-  artist_count = {}
-  artist_count2 = {}
-  genre_count = {}
-  genre_count2 = {}
+  @@artists = []
+  @@genres = []
+  @@artist_count = {}
+  @@artist_count2 = {}
+  @@genre_count = {}
+  @@genre_count2 = {}
 
   def initialize(name, artist, genre)
     @name = name
@@ -35,5 +35,7 @@ class Song
 
   end
 
+  def self.count 
+    @@count
 
 end
