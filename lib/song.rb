@@ -15,8 +15,7 @@ class Song
 
     @artist = artist
     @@artists << @artist
-    if @@artists.include?("#{@artist}") == false
-      @@artist_count[@artist] = 1
+    @@artist_count[@artist] = @artists.count("#{@artist}")
     else
       @@artist_count[@artist] = @@artist_count[@artist] + 1
     end
