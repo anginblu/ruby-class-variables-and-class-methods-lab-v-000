@@ -18,6 +18,7 @@ class Song
       @@artists << @artist
       @@artist_count[@artist] = 1
     else
+      @@artists << @artist
       @@artist_count2[@artist] = @@artist_count[@artist] + 1
       @@artist_count[@artist] = @@artist_count2[@artist]
     end
@@ -27,6 +28,7 @@ class Song
       @@genres << @genre
       @@genre_count[@genre] = 1
     else
+      @@genres << @genre
       @@genre_count2[@genre] = @@genre_count[@genre] + 1
       @@genre_count[@genre] = @@genre_count2[@genre]
     end
