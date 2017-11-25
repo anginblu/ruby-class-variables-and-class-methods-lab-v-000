@@ -8,6 +8,8 @@ class Song
   @@genre_count = {}
   @@genre_count2 = {}
 
+  attr_reader = name, artist, genre
+
   def initialize(name, artist, genre)
     @name = name
 
